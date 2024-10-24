@@ -62,4 +62,4 @@ I hope this repository helps you progress in your studies and keeps you motivate
 
 ---
 
-Made with 💛 by [Bárbara].
+Made with 💛 by Bárbara.
