@@ -10,16 +10,16 @@ function checkInclusion(s1, s2) {
 
     // save the frequency of each character
     const s1Count = new Array(26).fill(0);
-    const s2Count = new Array(26).fill(0);
+    const windowCount = new Array(26).fill(0);
     for (let i = 0; i < s1.length; i++) {
         s1Count[s1.charCodeAt(i) - 'a'.charCodeAt(0)]++;
-        s2Count[s2.charCodeAt(i) - 'a'.charCodeAt(0)]++;
+        windowCount[s2.charCodeAt(i) - 'a'.charCodeAt(0)]++;
     }
 
     // verificar se s1 ja eh permutacao de s2
     let matches = 0;
     for (let i = 0; i < 26; i++) {
-        if (s1Count[i] === s2Count[i]) {
+        if (s1Count[i] === windowCount[i]) {
             matches++;
         }
     }
@@ -35,20 +35,20 @@ function checkInclusion(s1, s2) {
         // a = 0, b = 1, c = 2...
         // aumenta a janela pra direita
         let index = s2.charCodeAt(r) - 'a'.charCodeAt(0)
-        s2Count[index]++; // aumenta a contagem da letra q ta entrando na janela
-        if (s1Count[index] === s2Count[index]) {
+        windowCount[index]++; // aumenta a contagem da letra q ta entrando na janela
+        if (s1Count[index] === windowCount[index]) {
             matches++;
-        } else if (s1Count[index] + 1 === s2Count[index]) {
+        } else if (s1Count[index] + 1 === windowCount[index]) {
             // se a contagem for maior do que a qnt da janela
             matches--;
         }
 
         // diminui a janela a esquerda
         index = s2.charCodeAt(l) - 'a'.charCodeAt(0);
-        s2Count[index]--; // diminui a contagem da letra q ta saindo da janela
-        if (s1Count[index] === s2Count[index]) {
+        windowCount[index]--; // diminui a contagem da letra q ta saindo da janela
+        if (s1Count[index] === windowCount[index]) {
             matches++;
-        } else if (s1Count[index] - 1 === s2Count[index]) {
+        } else if (s1Count[index] - 1 === windowCount[index]) {
             matches--;
         }
 
