@@ -2,8 +2,8 @@
 // acha o meio da lista, quebra ela no meio, inverte a segunda metade e merge as duas metades
 
 function reorderList(head) {
-    let slow = head.next;
-    let fast = head.next.next;
+    let slow = head;
+    let fast = head.next;
     
     // achar o meio da lista 
     while (fast !== null && fast.next !== null) {
