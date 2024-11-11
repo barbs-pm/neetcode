@@ -31,6 +31,6 @@ function conquer(l, r) {
         }
         curr = curr.next;
     }
-    curr.next = l1 ? l1 : l2;
+    curr.next = l ? l : r;
     return dummy.next;
 }
