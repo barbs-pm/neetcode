@@ -2,7 +2,7 @@
 // basic idea: start from each gate, do a BFS to find the distance to each cell
 // then we can find the minimum distance to a gate for each cell
 // we know the dist is the shortest path because we are doing a BFS
-// it will process the cells in order of distance from the gate
+// it will process the cells in order of distance from the gate 
 
 function islandsAndTreasure(grid) {
     let ROWS = grid.length;
@@ -12,6 +12,7 @@ function islandsAndTreasure(grid) {
 
     function addCell(r, c) {
         // se a celula ta fora do grid, se ja foi visitada, ou se eh uma parede, nao adiciona
+        // Math.min(r, c) < 0 
         if (Math.min(r, c) < 0 || r === ROWS || c === COLS ||
             visit.has(r + ',' + c) || grid[r][c] === -1
         ) {
@@ -44,6 +45,7 @@ function islandsAndTreasure(grid) {
         }
         dist += 1;
     }
+    return grid;
 }
 
 const input = [
