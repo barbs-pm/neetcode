@@ -1,3 +1,5 @@
+// time complexity: O(n)
+
 function hasCycle(head) {
     if (!head) return false;
 

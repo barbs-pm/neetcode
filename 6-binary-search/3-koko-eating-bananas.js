@@ -2,6 +2,8 @@
 // usar busca binaria pra encontrar K
 // eh um valor entre 1 e o valor maximo das pilhas,
 // ao inves de tentar 1 por um, da pra usar busca binaria pra achar o valor
+
+// Time complexity: O(n∗logm) where n is the number of piles and m is the maximum size of a pile.
 function minEatingSpeed(piles, h) {
     let l = 1;
     let r = Math.max(...piles);

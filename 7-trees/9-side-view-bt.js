@@ -1,3 +1,6 @@
+// time complexity: O(n)
+// space complexity: O(n)
+
 function rightSideView(root) {
     const res = [];
     const queue = [root];

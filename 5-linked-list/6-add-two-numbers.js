@@ -1,3 +1,5 @@
+// time complexity: O(n)
+
 function addTwoNumbers(l1, l2) {
     const dummy = new ListNode();
     let curr = dummy;

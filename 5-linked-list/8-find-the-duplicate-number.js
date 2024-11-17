@@ -1,5 +1,6 @@
 // o algoritmo procura por um ponto de encontro, onde o indice do array é igual ao valor do elemento
 // a partir desse ponto de encontro, o algoritmo encontra o valor duplicado
+// Time complexity: O(n)
 
 function findDuplicate(nums) {
     let slow = 0;

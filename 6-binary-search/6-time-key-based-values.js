@@ -11,8 +11,8 @@ class TimeMap {
         this.keyStore.get(key).push([timestamp, value]);
     }
 
-    // O(logn) pois fazemos uma busca binária
-    // O(n) espaço pois guardamos todos os valores
+    // Time complexity: O(logn) pois fazemos uma busca binária
+    // Space complexity: O(n) espaço pois guardamos todos os valores
     get(key, timestamp) {
         if (!this.keyStore.has(key)) return "";
 

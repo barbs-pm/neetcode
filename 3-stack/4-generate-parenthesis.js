@@ -1,6 +1,6 @@
 // a quantidade de parenteses fechado
 // sempre tem q ser menor q a qnt de abertos
-function generateParenthesis(n) {
+function generateParenthesis(n) { 
     const res = [];
     const stack = [];
 

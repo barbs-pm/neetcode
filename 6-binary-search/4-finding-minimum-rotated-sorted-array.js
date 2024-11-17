@@ -4,7 +4,7 @@
 // se a metadade esquerda ta ordenada, e o target ta entre l e mid => r=mid-1
 // se a metade direta ta ordenada, e o target ta entre mid e r => l=mid+1
 // senao busca na metade oposta
-
+// Time complexity: O(logn)
 function search(nums, target) {
     let l = 0;
     let r = nums.length - 1;

@@ -5,6 +5,7 @@ class ListNode {
     }
 }
 
+// Time complexity: O(n)
 class Solution {
     getKthNode(curr, k) {
         while (curr && k > 0) {

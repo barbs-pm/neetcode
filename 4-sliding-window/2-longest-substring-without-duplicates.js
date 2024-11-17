@@ -3,6 +3,7 @@
 // criar um ponteiro pra esquerda e um pra direita
 // se o elemento da direita ja estiver no set, remover os elementos da esquerda ate remover o elem repetido
 // adicionar o elemento no set e atualizar o maior tamanho da substring
+// time complexity: O(n)
 
 function lengthOfLongestSubstring(s) {
     const set = new Set();

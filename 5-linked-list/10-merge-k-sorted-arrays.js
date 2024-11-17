@@ -1,3 +1,5 @@
+// Time complexity: O(nlogk) where k is the number of linked lists and n is the total number of nodes.
+
 function mergeKLists(lists) {
     if (!lists || lists.length === 0) {
         return null;

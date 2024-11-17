@@ -1,3 +1,4 @@
+// time complexity: O(n)
 function minWindow(s, t) {
     const map = new Map();
 

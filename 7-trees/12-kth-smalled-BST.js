@@ -1,3 +1,5 @@
+// time complexity: O(n)
+
 function kthSmallest(root, k) {
     const stack = [];
     let n = 0;

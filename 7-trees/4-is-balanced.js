@@ -1,3 +1,6 @@
+// time complexity: O(n)
+// space complexity: O(n)
+
 function isBalanced(root) {
     if (root === null) return true;
 

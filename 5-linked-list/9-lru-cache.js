@@ -1,3 +1,5 @@
+// Time complexity: O(1) pois estamos usando um Map
+
 class LRUCache {
     constructor(capacity) {
         this.capacity = capacity;

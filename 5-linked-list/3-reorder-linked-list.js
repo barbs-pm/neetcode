@@ -1,5 +1,6 @@
 // reverse and merge
 // acha o meio da lista, quebra ela no meio, inverte a segunda metade e merge as duas metades
+// Time complexity: O(n)
 
 function reorderList(head) {
     let slow = head;

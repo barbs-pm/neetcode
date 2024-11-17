@@ -1,6 +1,7 @@
 // Se o valor do meio é maior que o último elemento, 
 // isso significa que o mínimo está à direita. 
 // Se for menor ou igual, o mínimo pode estar na esquerda.
+// Time complexity: O(logn)
 
 function findMin(nums) {
     let l = 0;

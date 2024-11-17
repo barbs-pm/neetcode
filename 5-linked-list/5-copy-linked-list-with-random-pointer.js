@@ -1,3 +1,5 @@
+// time complexity: O(n)
+
 function copyRandomList(head) {
     if (!head) return null;
 

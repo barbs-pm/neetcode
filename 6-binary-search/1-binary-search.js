@@ -17,3 +17,5 @@ function search(nums, target) {
 
 console.log(search([-1,0,2,4,6,8], 3)); // -1
 console.log(search([-1,0,2,4,6,8], 4)); // 3
+
+// Time complexity: O(logn)
